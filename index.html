@@ -573,7 +573,148 @@
             </li>
           </ul>
         </div>
+        <div class="subscription">
+          <p class="footer-media">Subscribe</p>
+          <form class="form-footer">
+            <label for="user-email"></label>
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button class="button-form" type="submit">
+              Subscribe
+              <svg
+                class="svg-footer"
+                weight="24"
+                height="24"
+                aria-label="icon telegram"
+              >
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="close-button-modal">
+          <svg
+            class="close-icon-modal"
+            width="8"
+            heigth="8"
+            aria-label="close icon"
+          >
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-paragraf">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal-form">
+          <div class="review-form">
+            <label class="review-form-label" for="user-name">Name</label>
+            <div class="icon-modal-input">
+              <input
+                class="review-form-input"
+                id="user-name"
+                name="user-name"
+                type="text"
+                pattern="[a-zA-Zа-яА-ЯіІ-їЇєЄ]+"
+                title="Anton"
+                required
+              />
+              <svg
+                class="icon-modal-review"
+                width="12"
+                heigth="12"
+                aria-label="icon user"
+              >
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form">
+            <label class="review-form-label" for="user-phone">Phone</label>
+            <div class="icon-modal-input">
+              <input
+                class="review-form-input"
+                id="user-phone"
+                name="user-phone"
+                type="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                required
+              />
+              <svg
+                class="icon-modal-review"
+                width="13"
+                heigth="13"
+                aria-label="icon phone"
+              >
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form">
+            <label class="review-form-label" for="user-email">Email</label>
+            <div class="icon-modal-input">
+              <input
+                class="review-form-input"
+                id="user-email"
+                name="user-email"
+                type="email"
+                required
+              />
+              <svg
+                class="icon-modal-review"
+                width="15"
+                heigth="12"
+                aria-label="icon email"
+              >
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form">
+            <label class="review-form-label" for="user-comment">Comment</label>
+            <textarea
+              class="modal-textarea"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+              required
+            ></textarea>
+          </div>
+          <div class="review-form-checkbox">
+            <input
+              class="review-form-input-checkbox visually-hidden"
+              id="user-privacy"
+              name="user-privacy"
+              type="checkbox"
+              value="true"
+              required
+            />
+            <label class="checkbox-label" for="user-privacy">
+              <span class="modal-checkbox">
+                <svg
+                  class="modal-checkbox-span"
+                  width="10"
+                  heigth="8"
+                  aria-label="icon checkmark"
+                >
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="label-privancy" href=""> Privacy Policy</a>
+            </label>
+          </div>
+          <button class="modal-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
